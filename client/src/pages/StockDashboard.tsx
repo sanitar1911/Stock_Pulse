@@ -12,7 +12,6 @@ import SentimentPanel from "@/components/stock/SentimentPanel";
 import SignalPanel from "@/components/stock/SignalPanel";
 import { calculateTechnicals, generateSignal, type QuoteData, type Candle } from "@/lib/finnhub";
 import { useT } from "@/lib/i18n";
-import { PerplexityAttribution } from "@/components/PerplexityAttribution";
 
 export default function StockDashboard() {
   const t = useT();
@@ -116,7 +115,6 @@ export default function StockDashboard() {
         )}
       </main>
 
-      <PerplexityAttribution />
     </div>
   );
 }
